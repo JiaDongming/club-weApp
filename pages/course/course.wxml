@@ -1,0 +1,55 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">私教预约</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">团体课预约</view>
+
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
+  <swiper-item>
+
+    <view class="weui-cells weui-cells_after-title">
+
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="http://img3.imgtn.bdimg.com/it/u=1924672793,3059555888&fm=27&gp=0.jpg" style="margin-right: 5px;vertical-align: middle;width:120rpx; height: 120rpx; border-radius: 50%;"></image>
+        </view>
+        <view class="weui-cell__bd">
+          <view class='total-desc'>
+            <text class='trainer-name'>周瑜</text> 
+            <text class='trainer-level'>国家一级运动员</text>
+            
+          </view>
+          <view class='detail-desc'>在健身俱乐部中一对一进行指导训练的专业健身教练,其具有互...，针对性等</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <view class='schdule'>立即预约</view>
+        </view>
+      </navigator>
+
+      <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="http://img1.imgtn.bdimg.com/it/u=632121556,1788732339&fm=27&gp=0.jpg" style="margin-right: 5px;vertical-align: middle;width:120rpx; height: 120rpx; border-radius: 50%;"></image>
+        </view>
+        <view class="weui-cell__bd">
+          <view class='total-desc'>
+            <text class='trainer-name'>谢敏</text>
+            <text class='trainer-level'>国家一级瑜伽教练</text>
+          </view>
+          <view class='detail-desc'>在健身俱乐部中一对一进行指导训练的专业健身教练,其具有互...，针对性等</view>
+        </view>
+        <view class="weui-cell__ft weui-cell__ft_in-access">
+          <view class='schdule'>立即预约</view>
+        </view>
+      </navigator>
+      
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='team-item'>
+      <image class='teamPic' src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1147247466,330921672&fm=27&gp=0.jpg'></image>
+    </view>
+    <view>提现中</view>
+    <view>提现中</view>
+  </swiper-item>
+</swiper>

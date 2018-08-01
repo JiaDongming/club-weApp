@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/course/course",
+    "pages/training/training",
+    "pages/card/card",
+    "pages/friends/friends"
+  ],
+  "tabBar": {
+    "selectedColor": "#584F60",
+    "color":"#8A8A8A",
+    "list": [
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程预约",
+        "iconPath": "img/tabBar/course.png",
+        "selectedIconPath": "img/tabBar/course_selected.png"
+      },
+    
+      {
+        "pagePath": "pages/training/training",
+        "text": "我的训练",
+        "iconPath": "img/tabBar/training.png",
+        "selectedIconPath": "img/tabBar/training_selected.png"
+      },
+      {
+        "pagePath": "pages/card/card",
+        "text": "我的卡",
+        "iconPath": "img/tabBar/card.png",
+        "selectedIconPath": "img/tabBar/card_selected.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text": "推荐朋友",
+        "iconPath": "img/tabBar/friends.png",
+        "selectedIconPath": "img/tabBar/friends_selected.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

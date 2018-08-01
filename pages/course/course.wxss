@@ -1,0 +1,109 @@
+/* pages/detail/detail.wxss */
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.swiper-tab-item {
+  width: 50%;
+  color: #434343;
+}
+
+.active {
+  color: #24c789;
+  border-bottom: 4rpx solid #24c789;
+}
+
+swiper {
+  text-align: center;
+  height: 18000rpx;
+}
+
+.lists{
+  height: 600rpx;
+}
+
+.training-item {
+  margin: 50rpx 0;
+  height: 350rpx;
+}
+
+.user-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 0 20rpx 0 20rpx;
+  float: left;
+}
+
+.trainer-desc {
+  float: left;
+  width: 360rpx;
+  height: 300rpx;
+}
+
+.total-desc {
+  font-size: small;
+  position: relative;
+}
+
+.trainer-name {
+  font-size: 150%;
+  position: relative;
+}
+
+.trainer-level {
+  margin-left: 15rpx;
+  font-size: 90%;
+  position: relative;
+  top: -15rpx;
+}
+
+.detail-desc {
+  width: 100%;
+  font-size: small;
+  height: 120rpx;
+  float: left;
+  color: #bebebe;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.schdule {
+  line-height: 170rpx;
+  color: #24c789;
+  float: left;
+  padding-left: 5rpx;
+}
+
+.arrow {
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  position: relative;
+  left: -5rpx;
+  top: 65rpx;
+}
+.divLine{
+ background: #ce3737ea;
+ width: 100%;
+ height: 15rpx;
+}
+
+.team-item {
+  margin: 25rpx 10rpx;
+}
+
+.teamPic {
+  margin: 0 10rpx;
+  height: 300rpx;
+  border-radius: 5%
+}
