@@ -1,2 +1,24 @@
-<!--pages/card/card.wxml-->
-<text>pages/card/card.wxml</text>
+<swiper indicator-dots='true' indicator-color='#fff' indicator-active-color='#584F60' autoplay='true' interval='2500' circular='true'>
+  <view wx:for="{{imgUrls}}" class='imgs'>
+    <swiper-item>
+      <image src='{{item}}' mode='aspectFit'></image>
+    </swiper-item>
+  </view>
+</swiper>
+
+<view class='article'>
+  <view class='article-item' wx:for="{{articles}}">
+    <navigator url='{{item.link}}' open-type='navigate'>
+      <view class='article-Title'>{{item.title}}</view>
+      <image src='{{item.imgUrl}}' mode='widthFix'></image>
+    </navigator>
+
+  </view>
+</view>
+
+<scroll-view scroll-x='true' class='likeCon'>
+   <view wx:for="{{imgUrls}}" class='likeItem'>
+    <image src='{{item}}' mode='aspectFill' class='likeImg'></image>
+   </view>
+
+</scroll-view>

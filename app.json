@@ -3,7 +3,10 @@
     "pages/course/course",
     "pages/training/training",
     "pages/card/card",
-    "pages/friends/friends"
+    "pages/friends/friends",
+    "article/article01/article01",
+    "article/article02/article02",
+    "article/article03/article03"
   ],
   "tabBar": {
     "selectedColor": "#584F60",
@@ -38,8 +41,14 @@
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#584F60",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
   }
 }

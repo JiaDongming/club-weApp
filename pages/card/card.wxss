@@ -1,1 +1,27 @@
 /* pages/card/card.wxss */
+swiper-item image {
+  width: 100%
+}
+
+swiper {
+  margin: 0 0 30rpx 0
+}
+
+.likeCon {
+  width: 100%;
+  height: 130px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.likeItem {
+  display: inline-block;
+  width: 184px;
+  text-align: center;
+}
+
+.likeImg {
+  width: 174px;
+  height: 100px;
+  margin-right:  5px;
+}
