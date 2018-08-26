@@ -1,5 +1,6 @@
 {
   "pages": [
+        "pages/guide/guide",
     "pages/course/course",
     "pages/training/training",
     "pages/card/card",
@@ -7,9 +8,12 @@
     "article/article01/article01",
     "article/article02/article02",
     "article/article03/article03"
+ 
+    
+   
   ],
   "tabBar": {
-    "selectedColor": "#584F60",
+    "selectedColor": "#716a78",
     "color":"#8A8A8A",
     "list": [
       {
@@ -41,9 +45,9 @@
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#584F60",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "networkTimeout": {
     "request": 20000,

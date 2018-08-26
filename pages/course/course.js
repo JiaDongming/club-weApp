@@ -5,6 +5,12 @@ Page({
     currentTab: 0,
     tab1:'私教预约',
     tab2:'团体课预约',
+    team:[{
+      img:'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1147247466,330921672&fm=27&gp=0.jpg',
+content:'动感单车',
+    },{  img:'http://himg2.huanqiu.com/attachment2010/2015/0803/10/07/20150803100718671.jpg',
+  content: '瑜伽',
+    }],
     trainers: [{
         "img": 'http://img3.imgtn.bdimg.com/it/u=1924672793,3059555888&fm=27&gp=0.jpg',
         "name": '周瑜',

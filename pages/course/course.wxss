@@ -99,11 +99,23 @@ swiper {
 }
 
 .team-item {
-  margin: 25rpx 10rpx;
+  width: 650rpx;
+  height: 315rpx;
+  /* margin: 25rpx 10rpx; */
+  margin: 5px auto;
+}
+
+.team-item .team-txt {
+  color:#ffffff;
+  font-size: 36px;
+  position: relative;
+  top: -210rpx;
 }
 
 .teamPic {
+   width: 650rpx;
+  height: 315rpx;
   margin: 0 10rpx;
-  height: 300rpx;
-  border-radius: 5%
+
+  border-radius: 6%
 }

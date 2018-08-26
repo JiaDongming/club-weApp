@@ -5,11 +5,28 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    var isFir=wx.getStorageSync('isFirst');
+    if(isFir){
+      wx.switchTab({
+        url: 'pages/course/course',
+      })
+    }else {
+      wx.navigateTo({
+        url: 'pages/guide/guide',
+      })
+    }
     // 登录
     wx.login({
-      success: res => {
+      // success: res => {
+      success: function() {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.getUserInfo({
+          success:function(res) {
+            wx.setStorageSync("isFirst", res.userInfo);
+            that.globalData.userInfo=res.userInfo
+            typeof cb=="function"&& cb(that.globalData.userInfo)
+          }
+        })
       }
     })
     // 获取用户信息

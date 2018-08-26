@@ -10,46 +10,51 @@
         <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
       </view>
       <view class="weui-tab__panel">
+        <!-- 私教记录 -->
         <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-          <view class="weui-cells weui-cells_after-title">
+          <!-- 顶部背景 -->
+          <view class='training-background'>
+            <image class='bg-img' src='{{trainingbackground.img}}'></image>
+            <!-- <image class='trainerAvanta' src='{{trainingbackground.trainerAvanta}}'></image> -->
+            <text class='trainerName'>{{trainingbackground.trainerName}}</text>
 
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-              <view class="weui-cell__hd">
-                <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIShEFeL74Rmnso9n2sHicDkrdtUYIcwl9ibOS9NmOnoRpTnm5ib7kJfXoEalpQBc9KDhD0veDlBG36A/132" style="margin-right: 5px;vertical-align: middle;width:120rpx; height: 120rpx; border-radius: 50%;"></image>
-              </view>
-              <view class="weui-cell__bd">
-                <view class='total-desc'>
-                  <text class='trainer-name'>周瑜</text>
-                  <text class='trainer-level'>国家一级运动员</text>
-                </view>
-                <view class='detail-desc'>在健身俱乐部中一对一进行指导训练的专业健身教练,其具有互...，针对性等</view>
-              </view>
-              <view class="weui-cell__ft weui-cell__ft_in-access">
-                <view class='schdule'>立即预约</view>
-              </view>
-            </navigator>
+            <text class='trainingname'>{{trainingbackground.trainingname}} </text>
 
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-              <view class="weui-cell__hd">
-                <image src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIShEFeL74Rmnso9n2sHicDkrdtUYIcwl9ibOS9NmOnoRpTnm5ib7kJfXoEalpQBc9KDhD0veDlBG36A/132" style="margin-right: 5px;vertical-align: middle;width:120rpx; height: 120rpx; border-radius: 50%;"></image>
-              </view>
-              <view class="weui-cell__bd">
-                <view class='total-desc'>
-                  <text class='trainer-name'>Steven</text>
-                  <text class='trainer-level'>国家一级运动员</text>
+            <text class='normaltext'>剩余</text>
+
+            <text class='trainingleftnum'> {{trainingbackground.trainingleftnum}}</text>
+
+            <text class='normaltext'>节</text>
+          </view>
+          <!-- 历史记录 -->
+          <view class="weui-panel">
+            <view class="weui-panel__bd">
+              <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__desc">综合训练这里到课程备注</view>
+                <view class="weui-media-box__info">
+                  <view class="weui-media-box__info__meta">刚刚</view>
                 </view>
-                <view class='detail-desc'>在健身俱乐部中一对一进行指导训练的专业健身教练,其具有互...，针对性等</view>
               </view>
-              <view class="weui-cell__ft weui-cell__ft_in-access">
-                <view class='schdule'>立即预约</view>
+
+            </view>
+
+            <view class="weui-panel__bd">
+              <view class="weui-media-box weui-media-box_text">
+                <view class="weui-media-box__desc">综合训练这里到课程备注</view>
+                <view class="weui-media-box__info">
+                  <view class="weui-media-box__info__meta">刚刚</view>
+                </view>
               </view>
-            </navigator>
+
+            </view>
 
           </view>
-
-
+          <!--  -->
         </view>
-        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+        <!-- 入场记录 -->
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">入场记录</view>
+        <!--请假记录 -->
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">请假记录 </view>
       </view>
     </view>
   </view>

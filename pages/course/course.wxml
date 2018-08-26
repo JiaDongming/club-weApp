@@ -69,13 +69,19 @@
   </swiper-item>
 
   <swiper-item>
-    <view class='team-item'>
+    <view class='team-content' wx:for="{{team}}">
+      <view class='team-item'>
+        <image class='teamPic' src='{{item.img}}'></image>
+        <text class='team-txt'>{{item.content}}</text>
+      </view>
+    </view>
+    <!-- <view class='team-item'>
       <image class='teamPic' src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1147247466,330921672&fm=27&gp=0.jpg'></image>
     </view>
     <view>
       <image src='../../../img/course/team/team1.png'>
       </image>
     </view>
-    <view>提现中</view>
+    <view>提现中</view> -->
   </swiper-item>
 </swiper>
